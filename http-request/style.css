@@ -1,0 +1,32 @@
+body {
+  margin: 0 auto;
+}
+.container {
+  width: 80%;
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+#user {
+  width: 30%;
+  background-color: rgba(60, 43, 145, 0.386);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+#posts {
+  width: 70%;
+  background-color: rgba(139, 0, 0, 0.479);
+}
+.userName {
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+  background-color: white;
+  width: 90%;
+  height: 80%;
+}

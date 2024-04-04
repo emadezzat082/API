@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title amiri-regular-italic">مواقيت الصلاة حسب مدن جمهورية مصر العربية</h1>
+      <main>
+        <div class="city">
+          <h1 class="amiri-bold" id="cityName">القاهرة</h1>
+        </div>
+        <div class="date amiri-regular-italic">
+          <h3>الجمعة 5 ابريل</h3>
+        </div>
+      </main>
+      <hr />
+      <section class="times" id="times">
+        <!-- <div class="style">
+          <h2 class="salah amiri-bold">الفجر</h2>
+          <h2 class="time">04:11</h2>
+        </div>
+        <div class="style">
+          <h2 class="salah amiri-bold">الشروق</h2>
+          <h2 class="time">04:11</h2>
+        </div>
+        <div class="style">
+          <h2 class="salah amiri-bold">الظهر</h2>
+          <h2 class="time">04:11</h2>
+        </div>
+        <div class="style">
+          <h2 class="salah amiri-bold">العصر</h2>
+          <h2 class="time">04:11</h2>
+        </div>
+        <div class="style">
+          <h2 class="salah amiri-bold">المغرب</h2>
+          <h2 class="time">04:11</h2>
+        </div>
+        <div class="style">
+          <h2 class="salah amiri-bold">العشاء</h2>
+          <h2 class="time">04:11</h2>
+        </div> -->
+      </section>
+      <br /><br />
+      <hr />
+      <hr />
+
+      <section class="change">
+        <label for="change-city" class="amiri-regular-italic"
+          >اختار المدينة</label
+        >
+        <select name="" id="change-city" class="amiri-regular-italic" >
+          <option value="Cairo">القاهرة</option>
+          <option value="Alexandria">اسكندرية</option>
+          <option value="Luxor">الاقصر</option>
+          <option value="Aswan">اسوان</option>
+          <option value="Sohag">سوهاج</option>
+          <option value="Matrouh"> مطروح</option>
+        </select>
+      </section>
+    </div>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

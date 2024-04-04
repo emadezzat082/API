@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3 style="visibility: hidden">title 1</h3>
+    <h3 style="visibility: hidden">title 2</h3>
+    <h3 style="visibility: hidden">title 3</h3>
+    <h3 style="visibility: hidden">title 4</h3>
+
+    <script>
+      let titles = document.getElementsByTagName("h3");
+      console.log(titles);
+
+      async function visibility() {
+        await setTimeout(async function () {
+          titles[0].style.visibility = "visible";
+          await setTimeout(async function () {
+            titles[1].style.visibility = "visible";
+            await setTimeout(async function () {
+              titles[2].style.visibility = "visible";
+              await setTimeout(function () {
+                titles[3].style.visibility = "visible";
+              }, 1000);
+            }, 1000);
+          }, 1000);
+        }, 1000);
+      }
+
+      visibility();
+    </script>
+  </body>
+</html>
